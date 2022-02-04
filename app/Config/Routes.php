@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/signin', 'Auth::signin');
 $routes->get('/signup', 'Auth::signup');
+$routes->get('/profile', 'Profile::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
