@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,22 +13,27 @@
   <!-- JavaScript Bundle with Popper -->
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-<div class="container-fluid">
-    <a class="navbar-brand p-3" href="/">T - Share</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link p-3 active" aria-current="page" href="/">Home</a>
-        <a class="nav-link p-3" href="/yours">Your Thoughts</a>
-        <a class="nav-link p-3" href="/profile">Profile</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand p-3" href="/">T - Share</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex flex-row">
+          <a class="nav-link p-3 active" aria-current="page" href="/">Home</a>
+          <a class="nav-link p-3" href="/yours">Your Thoughts</a>
+          <a class="nav-link p-3" href="/profile">Profile</a>
+
+        </div>
+        <span class="ml-auto navbar-text signin">
+          <a class="nav-link p-3 text-left" href="/signin">Sign In</a>
+        </span>
       </div>
     </div>
-  </div>
-</nav>
-<!-- Navbar -->
+  </nav>
+  <!-- Navbar -->
