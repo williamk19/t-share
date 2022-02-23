@@ -1,8 +1,8 @@
 <div class="container-md pt-5">
-  <h1>Hot Topics 🔥</h1>
+  <h1>Hot Topics, <?= session()->get('name') ?> 🔥</h1>
 
   <div class="card mt-5">
-  <h5 class="card-header">#fasilitas_kampus</h5>
+    <h5 class="card-header">#fasilitas_kampus</h5>
     <div class="card-body">
       <h5 class="card-title">AC Kurang dingin</h5>
       <h6 class="card-sub-title">By. William Kurniawan</h6>

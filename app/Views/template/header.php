@@ -31,7 +31,7 @@
 
         </div>
         <span class="ml-auto navbar-text signin">
-          <a class="nav-link p-3 text-left" href="/signin">Sign In</a>
+          <a class="nav-link p-3 text-left" href="/login">Sign In</a>
         </span>
       </div>
     </div>

@@ -15,13 +15,16 @@
               </p>
             </div>
           </div>
-          <form action="#" class="signin-form">
+          <?php if (session()->getFlashdata('msg')) : ?>
+            <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+          <?php endif; ?>
+          <form action="/login/auth" method="POST" class="signin-form">
             <div class="form-group mt-3">
-              <input type="text" class="form-control" required="">
-              <label class="form-control-placeholder" for="username">Username</label>
+              <input type="email" class="form-control" name="email" required="">
+              <label class="form-control-placeholder" for="email">Email</label>
             </div>
             <div class="form-group mt-3">
-              <input id="password-field" type="password" class="form-control" required="">
+              <input id="password-field" type="password" name="password" class="form-control" required="">
               <label class="form-control-placeholder" for="password">Password</label>
               <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
             </div>
@@ -30,17 +33,17 @@
             </div>
             <div class="form-group d-md-flex">
               <div class="w-50 text-left">
-                <label class="checkbox-wrap checkbox-primary mb-0 mt-3">Remember Me
+                <label class="checkbox-wrap checkbox-primary mb-0 mt-3">Ingat Saya
                   <input type="checkbox" checked="">
                   <span class="checkmark"></span>
                 </label>
               </div>
               <div class="w-50 text-md-right mt-3">
-                <a href="#">Forgot Password</a>
+                <a href="#">Lupa Password</a>
               </div>
             </div>
           </form>
-          <p class="text-center mt-4">Not a member? <a data-toggle="tab" href="/signup">Sign Up</a></p>
+          <p class="text-center mt-4">Belum memiliki akun? <a data-toggle="tab" href="/register">Sign Up</a></p>
         </div>
       </div>
     </div>

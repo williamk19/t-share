@@ -15,25 +15,32 @@
               </p>
             </div>
           </div>
-          <form action="#" class="signin-form">
+          <?php if (isset($validation)) : ?>
+            <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+          <?php endif; ?>
+          <form action="/register/save" method="POST" class="signin-form">
             <div class="form-group mt-3">
-              <input type="text" class="form-control" required="">
-              <label class="form-control-placeholder" for="username">Username</label>
+              <input type="text" class="form-control" name="name" required="">
+              <label class="form-control-placeholder" for="name">Nama Lengkap</label>
             </div>
             <div class="form-group mt-3">
-              <input type="email" class="form-control" required="">
+              <input type="email" class="form-control" name="email" required="">
               <label class="form-control-placeholder" for="email">Email</label>
             </div>
             <div class="form-group mt-3">
-              <input id="password-field" type="password" class="form-control" required="">
+              <input type="text" class="form-control" name="prodi" required="">
+              <label class="form-control-placeholder" for="prodi">Program Studi</label>
+            </div>
+            <div class="form-group mt-3">
+              <input id="password-field" type="password" name="password" class="form-control" required="">
               <label class="form-control-placeholder" for="password">Password</label>
               <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
             </div>
             <div class="form-group">
-              <button type="submit" class="form-control btn btn-primary rounded submit px-3 mt-3">Register</button>
+              <button type="submit" class="form-control btn btn-primary rounded submit px-3 mt-3">Daftar</button>
             </div>
           </form>
-          <p class="text-center mt-4">Already have an account? <a data-toggle="tab" href="/signin">Sign In</a></p>
+          <p class="text-center mt-4">Sudah Punya Akun? <a data-toggle="tab" href="/signin">Sign In</a></p>
         </div>
       </div>
     </div>
